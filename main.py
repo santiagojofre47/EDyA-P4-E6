@@ -15,7 +15,7 @@ if __name__ == '__main__':
             lista_pacientes.insertar(unPaciente)
         if timer_atencion == tAtencion:
             if not lista_pacientes.vacio():
-                lista_pacientes.Eliminar_Minimo()
+                lista_pacientes.Eliminar_minimo()
                 cant_atendidos+=1
                 print('Se atendio un paciente!')
             timer_atencion = 0
@@ -24,7 +24,3 @@ if __name__ == '__main__':
         i+=1
     print('----- SIMULACION FINALIZADA -----')
     print('Cantidad de pacientes atendidos: {}'.format(cant_atendidos))
-        
-
-
-
