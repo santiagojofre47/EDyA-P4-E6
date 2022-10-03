@@ -13,9 +13,10 @@ if __name__ == '__main__':
             print('Ha llegado un paciente!')
             unPaciente = random.randint(1,15)
             lista_pacientes.insertar(unPaciente)
-            cant_atendidos+=1
         if timer_atencion == tAtencion:
             if not lista_pacientes.vacio():
+                lista_pacientes.Eliminar_Minimo()
+                cant_atendidos+=1
                 print('Se atendio un paciente!')
             timer_atencion = 0
         
